@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9455B6302CAB594E00B657A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455B62F2CAB594E00B657A3 /* LoginView.swift */; };
+		9455B6322CAB59B200B657A3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455B6312CAB59B200B657A3 /* RegistrationView.swift */; };
 		94C6EC292CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6EC282CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift */; };
 		94C6EC2B2CA5D95200F37A0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6EC2A2CA5D95200F37A0B /* ContentView.swift */; };
 		94C6EC2D2CA5D95400F37A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C6EC2C2CA5D95400F37A0B /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9455B62F2CAB594E00B657A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9455B6312CAB59B200B657A3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		94C6EC252CA5D95200F37A0B /* gameOfThrones-TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gameOfThrones-TodoList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C6EC282CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameOfThrones_TodoListApp.swift; sourceTree = "<group>"; };
 		94C6EC2A2CA5D95200F37A0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9455B6272CAB586300B657A3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				94C6EC282CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9455B6282CAB586900B657A3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9455B62B2CAB590600B657A3 /* Root */,
+				9455B62A2CAB588C00B657A3 /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9455B6292CAB586E00B657A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9455B62A2CAB588C00B657A3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				9455B62C2CAB591D00B657A3 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		9455B62B2CAB590600B657A3 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				94C6EC2A2CA5D95200F37A0B /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9455B62C2CAB591D00B657A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9455B62F2CAB594E00B657A3 /* LoginView.swift */,
+				9455B6312CAB59B200B657A3 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		94C6EC1C2CA5D95200F37A0B = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +104,9 @@
 		94C6EC272CA5D95200F37A0B /* gameOfThrones-TodoList */ = {
 			isa = PBXGroup;
 			children = (
-				94C6EC282CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift */,
-				94C6EC2A2CA5D95200F37A0B /* ContentView.swift */,
+				9455B6292CAB586E00B657A3 /* Model */,
+				9455B6282CAB586900B657A3 /* Core */,
+				9455B6272CAB586300B657A3 /* App */,
 				94C6EC2C2CA5D95400F37A0B /* Assets.xcassets */,
 				94C6EC2E2CA5D95400F37A0B /* Preview Content */,
 			);
@@ -137,8 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9455B6302CAB594E00B657A3 /* LoginView.swift in Sources */,
 				94C6EC2B2CA5D95200F37A0B /* ContentView.swift in Sources */,
 				94C6EC292CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift in Sources */,
+				9455B6322CAB59B200B657A3 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameOfThrones-TodoList/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HRN9T7C2F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameOfThrones-TodoList/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HRN9T7C2F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
