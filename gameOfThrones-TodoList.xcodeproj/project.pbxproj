@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9455B6302CAB594E00B657A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455B62F2CAB594E00B657A3 /* LoginView.swift */; };
 		9455B6322CAB59B200B657A3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455B6312CAB59B200B657A3 /* RegistrationView.swift */; };
+		9455B6342CADF0E600B657A3 /* CustomTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455B6332CADF0E600B657A3 /* CustomTextFields.swift */; };
 		94C6EC292CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6EC282CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift */; };
 		94C6EC2B2CA5D95200F37A0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6EC2A2CA5D95200F37A0B /* ContentView.swift */; };
 		94C6EC2D2CA5D95400F37A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C6EC2C2CA5D95400F37A0B /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		9455B62F2CAB594E00B657A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9455B6312CAB59B200B657A3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		9455B6332CADF0E600B657A3 /* CustomTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
 		94C6EC252CA5D95200F37A0B /* gameOfThrones-TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gameOfThrones-TodoList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C6EC282CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameOfThrones_TodoListApp.swift; sourceTree = "<group>"; };
 		94C6EC2A2CA5D95200F37A0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		9455B62A2CAB588C00B657A3 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				9455B6352CADF11700B657A3 /* Custom */,
 				9455B62C2CAB591D00B657A3 /* Views */,
 			);
 			path = Authentication;
@@ -83,6 +86,14 @@
 				9455B6312CAB59B200B657A3 /* RegistrationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9455B6352CADF11700B657A3 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				9455B6332CADF0E600B657A3 /* CustomTextFields.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		94C6EC1C2CA5D95200F37A0B = {
@@ -192,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9455B6302CAB594E00B657A3 /* LoginView.swift in Sources */,
+				9455B6342CADF0E600B657A3 /* CustomTextFields.swift in Sources */,
 				94C6EC2B2CA5D95200F37A0B /* ContentView.swift in Sources */,
 				94C6EC292CA5D95200F37A0B /* gameOfThrones_TodoListApp.swift in Sources */,
 				9455B6322CAB59B200B657A3 /* RegistrationView.swift in Sources */,
