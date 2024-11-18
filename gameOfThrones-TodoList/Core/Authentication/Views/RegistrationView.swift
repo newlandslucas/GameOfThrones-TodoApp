@@ -21,16 +21,17 @@ struct RegistrationView: View {
     @State private var nameTapped: Bool = false
 
     var body: some View {
-        VStack(spacing: 120) {
+        VStack(spacing: 100) {
             VStack {
                 HStack {
                     Text("Crie sua\nconta.")
                         .font(.largeTitle)
-                        .fontWeight(.bold)
+                        .fontWeight(.heavy)
                         .foregroundColor(.white)
                     
                     Spacer()
                 }
+                .padding(.top, 100)
                 
                 Spacer()
                 

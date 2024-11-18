@@ -23,16 +23,17 @@ struct CustomTextField: View {
                 }
                 
                 TextField("", text: $text)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(.label))
                     .font(.subheadline)
                     .padding(.vertical, 10)
                     .padding(.horizontal, 2)
                     .overlay(Rectangle().frame(height: 1)
-                                .foregroundColor(text.isEmpty ? Color(.darkGray) : .white),
+                        .foregroundColor(text.isEmpty ? Color(.darkGray) : Color(.label)),
                              alignment: .bottom)
                     .onTapGesture {
                         fieldTapped = true
                     }
+                    .keyboardType(.emailAddress)
             }
             
             // Ícone de validação
@@ -66,12 +67,12 @@ struct CustomSecureField: View {
                 }
                 
                 SecureField("", text: $text)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(.label))
                     .font(.subheadline)
                     .padding(.vertical, 10)
                     .padding(.horizontal, 2)
                     .overlay(Rectangle().frame(height: 1)
-                                .foregroundColor(text.isEmpty ? Color(.darkGray) : .white),
+                                .foregroundColor(text.isEmpty ? Color(.darkGray) :Color(.label)),
                              alignment: .bottom)
                     .onTapGesture {
                         fieldTapped = true
