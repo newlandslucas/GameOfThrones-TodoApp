@@ -11,7 +11,7 @@ import SwiftUI
 struct gameOfThrones_TodoListApp: App {
     var body: some Scene {
         WindowGroup {
-            RegistrationView()
+            HomeView()
         }
     }
 }
